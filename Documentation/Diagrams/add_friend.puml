@@ -1,0 +1,13 @@
+@startuml
+
+skinparam componentStyle uml2
+skinparam monochrome true
+
+footer Add friend
+
+MovieLix -> Firebase : Search by name
+Firebase -> MovieLix : Return user
+MovieLix -> Firebase : Store friend ID
+Firebase -> MovieLix : Return result
+
+@enduml

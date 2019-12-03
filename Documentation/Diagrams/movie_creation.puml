@@ -1,0 +1,16 @@
+@startuml
+
+skinparam componentStyle uml2
+skinparam monochrome true
+
+footer Movie creation
+
+Linode -> Netflix : Get movies
+Netflix -> Linode : List of movies
+Linode -> IMDB : Get movie info
+IMDB -> Linode : Movie info
+Linode -> Translator : Get translation
+Translator -> Linode : Translation
+Linode -> DB : Store movies
+
+@enduml
