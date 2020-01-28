@@ -1,0 +1,11 @@
+@startuml
+
+skinparam componentStyle uml2
+skinparam monochrome true
+
+footer User creation
+
+MovieLix -> Firebase : Request
+Firebase -> MovieLix : Send token
+
+@enduml

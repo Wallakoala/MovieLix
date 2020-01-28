@@ -1,0 +1,14 @@
+@startuml
+
+skinparam componentStyle uml2
+skinparam monochrome true
+
+footer View movie
+
+MovieLix -> Linode : Get movie details
+Linode -> DB : Query movie details
+Linode -> MovieLix : Return results
+MovieLix -> Firebase : Get friends details
+Firebase -> MovieLix : Return results
+
+@enduml
