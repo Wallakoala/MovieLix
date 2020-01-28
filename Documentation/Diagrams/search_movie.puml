@@ -1,0 +1,12 @@
+@startuml
+
+skinparam componentStyle uml2
+skinparam monochrome true
+
+footer Search movie
+
+MovieLix -> Linode : Search query (movie, actor, director)
+Linode -> DB : Execute query
+Linode -> MovieLix : Return results
+
+@enduml

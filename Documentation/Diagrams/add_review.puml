@@ -1,0 +1,14 @@
+@startuml
+
+skinparam componentStyle uml2
+skinparam monochrome true
+
+footer Add review
+
+MovieLix -> Linode : Send review and user_id
+Linode -> DB : Store review
+Linode -> MovieLix : Response
+MovieLix -> Firebase : Send movie_id
+Firebase -> MovieLix : Response
+
+@enduml

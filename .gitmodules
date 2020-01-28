@@ -1,0 +1,6 @@
+[submodule "Linode"]
+	path = Linode
+	url = https://github.com/Wallakoala/Linode.git
+[submodule "App"]
+	path = App
+	url = https://github.com/Wallakoala/App.git
