@@ -6,3 +6,4 @@
   - [RapidAPI](./rapid_api.md)
   - [Deployment](./deployment.md)
 - [App](./app.md)
+- [Docker](./docker.md)
