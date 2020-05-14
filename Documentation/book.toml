@@ -1,0 +1,6 @@
+[book]
+authors = ["Dani M"]
+language = "en"
+multilingual = false
+src = "src"
+title = "MovieLix"

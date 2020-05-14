@@ -1,0 +1,31 @@
+@startuml
+
+skinparam componentStyle uml2
+skinparam monochrome true
+skinparam linetype ortho
+
+footer MovieLix architecture
+
+node "MovieLix" as movielix
+interface "Netflix API" as netflix_api
+interface "IMDB API" as imdb_api
+
+cloud Backend {
+  package DockerRest as "Docker" {
+    [Python] as apirest
+  }
+}
+
+cloud Firebase {
+}
+
+cloud Firestore {
+}
+
+movielix .up.( Firestore : movies, reviews, friends
+movielix .down.( Firebase : users
+apirest .left.( netflix_api
+apirest .up.( imdb_api
+apirest ..( Firestore : movies
+
+@enduml
