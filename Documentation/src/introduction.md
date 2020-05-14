@@ -3,7 +3,7 @@
 - [MovieLix](#movielix)
   - [Architecture](#architecture)
     - [Firestore](#firestore)
-  - [Usuarios](#usuarios)
+  - [Users](#users)
   - [GitFlow](#gitflow)
 
 ## Architecture
@@ -28,9 +28,9 @@ We store all the stuff in `Firestore`, which will contain the following collecti
     <img src="Diagrams/out/firestore/firestore.png"/>
 </p>
 
-## Usuarios
+## Users
 
-The authentication project is handled by [Firebase](https://firebase.google.com/).
+The authentication process is handled by [Firebase](https://firebase.google.com/).
 
 ## GitFlow
 
