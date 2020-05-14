@@ -11,6 +11,6 @@ Linode -> IMDB : Get movie info
 IMDB -> Linode : Movie info
 Linode -> Translator : Get translation
 Translator -> Linode : Translation
-Linode -> DB : Store movies
+Linode -> Firestore : Store movies
 
 @enduml

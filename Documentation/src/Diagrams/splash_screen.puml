@@ -1,0 +1,20 @@
+@startuml
+
+skinparam componentStyle uml2
+skinparam monochrome true
+
+footer Splash screen
+
+(*) --> "Get current user"
+
+"Get current user" --> "Wait 2s"
+
+if "User is null" then
+  --> [true] "Start LoginActivity"
+  --> (*)
+else
+  --> [false] "Start MainActivity"
+  --> (*)
+endif
+
+@enduml
