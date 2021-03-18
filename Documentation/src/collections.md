@@ -27,6 +27,36 @@ Collection to store all the movies retrieved by __Linode__. Field names are just
 | 9      | Number |   TBD    |         |
 | 10     | Number |   TBD    |         |
 
+## reviews
+
+Collection to store the users' reviews.
+
+| Fields    |  Type  | Nullable | Notes                 |
+| --------- | :----: | :------: | :-------------------- |
+| movie     | String |    ❌     | Taken from `Firebase` |
+| score     | String |    ❌     | Taken from `Firebase` |
+| user      | String |    ❌     | Taken from `Firebase` |
+| timestamp | String |    ❌     | Taken from `Firebase` |
+| comment   | String |    ✔️     | Taken from `Firebase` |
+
+## friends
+
+Collection to store the users' friends.
+
+| Fields    |      Type       | Nullable | Notes                 |
+| --------- | :-------------: | :------: | :-------------------- |
+| id        |     String      |    ❌     | Taken from `Firebase` |
+| friend_of | Array of String |    ❌     | Taken from `Firebase` |
+
+## followers
+
+Collection to store the users' followers.
+
+| Fields      |      Type       | Nullable | Notes                 |
+| ----------- | :-------------: | :------: | :-------------------- |
+| id          |     String      |    ❌     | Taken from `Firebase` |
+| followed_by | Array of String |    ❌     | Taken from `Firebase` |
+
 ---
 
 <p align="center">
