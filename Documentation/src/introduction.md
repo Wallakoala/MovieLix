@@ -11,7 +11,7 @@
 This project contains three main components:
 
 - The backend ([Linode](./linode.md)): our server implemented in `Python`.
-- The [app](./app.md): our application implemented in `Android`.
+- The [App](./app.md): our application implemented in `Android`.
 - `Firestore`: Google's realtime database for storing all the information.
 
 This diagram shows our architecture:
@@ -22,11 +22,7 @@ This diagram shows our architecture:
 
 ### Firestore
 
-We store all the stuff in `Firestore`, which will contain the following collections:
-
-<p align="center">
-    <img src="Diagrams/out/firestore/firestore.png"/>
-</p>
+We store all the stuff in `Firestore`, which will contain the following collections.
 
 ## Users
 

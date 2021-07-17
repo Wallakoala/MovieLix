@@ -1,0 +1,48 @@
+@startuml
+
+skinparam componentStyle uml2
+skinparam monochrome true
+
+footer Overview
+
+start
+
+:Get current user;
+
+if (User is null) then (true)
+  :IntroActivity;
+  if (Action) then (Iniciar sesión)
+    :LoginActivity;
+  else (Registrar)
+    :RegisterActivity;
+  endif
+endif
+
+repeat
+  :MainActivity;
+  if (Añadir review) then
+    :MoviesActivity;
+    if (Search confirmed) then (true)
+      :new MovieAdapter;
+    else (false)
+      :new MovieSuggestionAdapter;
+    endif
+
+    :MovieActivity;
+
+  elseif (Mis Reviews) then
+    :MyReviewsActivity;
+    if (Movie clicked) then
+      :MoviesActivity;
+    endif
+  elseif (Mis Amigos) then
+    :MyFriendsActivity;
+    :UsersActivity;
+  elseif (Salir) then
+    :Sign out;
+  endif
+repeat while
+
+stop
+
+@enduml
